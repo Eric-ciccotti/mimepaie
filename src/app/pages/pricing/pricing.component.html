@@ -1,16 +1,28 @@
-<div class="p-3">
+<div class="section p-3">
   <div class="theme-container">
+    <h1 class="section-title">TARIFICATION
+    </h1>
+    <div class="my-3">
+      <div fxLayout="column" fxLayoutAlign="center center" class="text-center">
+        <h1 class="uppercase">SANS ENGAGEMENT</h1>
+        <p>Un accompagnement sur mesure et en fonction de vos besoins.</p>
+        <mat-card class="text-center">
+          <h3>Inclus dans la préstation:</h3>
+          <mat-list>
+            <mat-list-item *ngFor="let message of messages">
+              <mat-icon matListIcon>check</mat-icon>
+              <p matLine>
+                <span class="demo-2"> {{message}} </span>
+              </p>
+            </mat-list-item>
+          </mat-list>
+        </mat-card>
 
-      <div class="my-3">
-        <div fxLayout="column" fxLayoutAlign="center center" class="text-center">  
-          <h1 class="uppercase">Pricing packages</h1>             
-          <p>Choose a package that's best for your business.</p>
-        </div>
-        <mat-tab-group mat-align-tabs="center" class="pricing-tabs">
-          <mat-tab label="MONTHLY"><app-monthly></app-monthly></mat-tab>
-          <mat-tab label="YEARLY"><app-yearly></app-yearly></mat-tab>
-        </mat-tab-group>
-      </div> 
+
+        <h2>3 niveaux de prestations </h2>
+      </div>
+      <app-tarifs></app-tarifs>
+    </div>
 
   </div>
 </div>
