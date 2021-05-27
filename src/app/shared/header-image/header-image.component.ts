@@ -45,7 +45,11 @@ export class HeaderImageComponent implements OnInit {
   scroll() {
     let id = "quisommenous";
     let el: HTMLElement = document.getElementById(id);
-    el.scrollIntoView({ block: "end", inline: "end", behavior: "smooth" });
+    el.scrollIntoView({
+      block: "start",
+      inline: "nearest",
+      behavior: "smooth",
+    });
   }
 
   ngOnDestroy() {
