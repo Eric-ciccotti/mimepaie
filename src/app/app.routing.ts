@@ -44,7 +44,7 @@ export const routes: Routes = [
       relativeLinkResolution: "legacy",
       anchorScrolling: "enabled",
       initialNavigation: "enabled", // for one load page, without reload
-      // useHash: true
+      useHash: true,
     }),
   ],
   exports: [RouterModule],
